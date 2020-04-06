@@ -44,7 +44,7 @@ getData <- function(url_dat)
 # test result function
 testTable <- function(df)
 {
-  df_spec <- readRDS(url('https://github.com/bildungsmonitoringZH/covid19_edu_mindsteps/raw/master/df_spec.rds'))
+  df_spec <- readRDS(url('https://github.com/CGRBZH/covid19_soc_swissix/raw/master/df_spec.rds'))
 
   assert_that(is(df, 'data.frame'))
   assert_that(identical(names(df), df_spec$name))
