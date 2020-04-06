@@ -39,9 +39,9 @@ Kann die Variable OGD gestellt werden?
 Datei `https://ixpmanager.swissix.ch/swissix_daily_volume.txt`
 
 * `date`: Datum, Format yyyy-mm-dd
-* `value`: Anzahl, nur Ganzzahlen verwenden
+* `value`: Anzahl
 
 ## Vorgehen
 
 * Automatisches Update des Datenfiles `swissix_daily_volume.txt` durch SwissIX, in der Regel täglich.
-* R-Skript `prepareDate.R` zum Generieren der erforderlichen Datenstruktur.
+* R-Skript `prepareData.R` zum Generieren der erforderlichen Datenstruktur.
