@@ -24,7 +24,7 @@ Corinna Grobe <corinna.grobe@statistik.ji.zh.ch>, Statistisches Amt Kanton Züri
 
 [unit] Terabit pro Tag
 
-[update] täglich (to be confirmed)
+[update] täglich (Anm.: 1 Tag Verzug)
 
 [description] https://github.com/CGRBZH/covid19_soc_swissix (to change)
 
