@@ -24,7 +24,7 @@ Corinna Grobe <corinna.grobe@statistik.ji.zh.ch>, Statistisches Amt Kanton Züri
 
 [unit] Terabit pro Tag
 
-[update] täglich
+[update] täglich (to be confirmed)
 
 [description] https://github.com/CGRBZH/covid19_soc_swissix (to change)
 
@@ -39,7 +39,7 @@ Kann die Variable OGD gestellt werden?
 Datei `https://ixpmanager.swissix.ch/swissix_daily_volume.txt`
 
 * `date`: Datum, Format yyyy-mm-dd
-* `value`: Anzahl
+* `value`: Terabit
 
 ## Vorgehen
 
