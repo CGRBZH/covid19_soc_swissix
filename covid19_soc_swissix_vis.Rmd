@@ -26,13 +26,13 @@ data <- read_csv(url(url_dat))
 
 ```{r vis daily, fig.height=8, fig.width=12, echo=FALSE}
 
-ggplot(data, aes(x=date, y=value*125)) + geom_point(color = "#FF6666", alpha = 0.7) +
+ggplot(data, aes(x=date, y=value/8)) + geom_point(color = "#FF6666", alpha = 0.7) +
   geom_path(color = "#FF6666", alpha = 0.7) +
   scale_x_date(date_labels = "%a\n%d. %m", date_breaks = "1 week") +
   labs(title = "Tägliches Internet-Datenvolumen | 01.01.-04.04.2020",
        caption = "Quelle: SwissIX",
        x = NULL,
-       y = "Gigabyte") +
+       y = "Terabyte") +
   theme_stat() +
   theme(panel.grid.major.x = element_line(linetype = "solid", size = 0.25, color = "grey"))
 
@@ -52,12 +52,12 @@ data_wk <- data %>% select(date, value) %>%
   mutate(weekly_change = weekly_total - lag(weekly_total, default = first(weekly_total)))
 
 ggplot(data_wk, aes(week)) + 
-  geom_bar(aes(weight = weekly_total*125), fill = "#FF6666")+
+  geom_bar(aes(weight = weekly_total/8), fill = "#FF6666")+
   labs(title = "Wöchentliches Internet-Datenvolumen | KW 1- KW 14, 2020",
        caption = "Quelle: SwissIX",
        x = NULL,
-       y = "Gigabyte") +
-  ylim(c(0, 15000000)) +
+       y = "Terabyte") +
+  ylim(c(0, 15000)) +
   theme_stat()
 
 ggsave("swissix_weekly.png", width = 28, height = 18, units = "cm")
