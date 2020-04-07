@@ -34,7 +34,7 @@ getData <- function(url_dat)
       'source' := "SwissIX Swiss Internet Exchange",
       'update' := "t\u00e4glich",
       'public' := "ja",
-      'description' := " "
+      'description' := "https://github.com/CGRBZH/covid19_soc_swissix"
     )
   
   # return
@@ -57,5 +57,5 @@ testTable <- function(df)
 # main
 url_dat <- "https://ixpmanager.swissix.ch/swissix_daily_volume.txt"
 dat_prep <- getData(url_dat)
-# test <- testTable(dat_prep)
+test <- testTable(dat_prep)
 write.table(dat_prep, "./Soziales_SwissIXDailyVolume.csv", sep=",", fileEncoding="UTF-8", row.names = F)
