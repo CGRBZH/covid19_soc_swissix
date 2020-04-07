@@ -8,7 +8,7 @@
 df_spec <- function()
 {
   df_spec <- tibble('name' := c('date', 'value', 'topic', 'variable_short', 'variable_long', 'location', 'unit', 'source', 'update', 'public', 'description')) %>%
-    mutate('class' := c('POSIXct', 'numeric', rep('character', n() -2)))
+  mutate('class' := c('POSIXct', 'numeric', rep('character', n() -2)))
   
   saveRDS(df_spec, 'df_spec.rds')
   
