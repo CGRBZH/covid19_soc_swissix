@@ -16,15 +16,15 @@ Corinna Grobe <corinna.grobe@statistik.ji.zh.ch>, Statistisches Amt Kanton Züri
 
 [topic] Soziales
 
-[variable_short] daily_volume
+[variable_short] internet_datenvolumen
 
-[variable_long] Tägliches Internet-Traffic-Volumen
+[variable_long] Internet-Datenvolumen
 
-[location] Schweiz (default)
+[location] CH
 
 [unit] Terabit pro Tag
 
-[update] täglich (Anm.: 1 Tag Verzug)
+[update] täglich
 
 [description] https://github.com/CGRBZH/covid19_soc_swissix (to change)
 
@@ -43,5 +43,6 @@ Datei `https://ixpmanager.swissix.ch/swissix_daily_volume.txt`
 
 ## Vorgehen
 
-* Automatisches Update des Datenfiles `swissix_daily_volume.txt` durch SwissIX, in der Regel täglich.
+* Automatisches Update des Datenfiles `swissix_daily_volume.txt` durch SwissIX, in der Regel täglich mit.
+* Letzter Tag im Datenfile liegt 1 bis 2 Tage zurück.
 * R-Skript `prepareData.R` zum Generieren der erforderlichen Datenstruktur.
