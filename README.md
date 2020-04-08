@@ -12,7 +12,7 @@ Das Datenfile wird in der Regel täglich automatisch aktualisiert. Der letzte im
 Die täglich aktualisierten Daten von Swiss IX zeigen, dass der Internetverkehr bereits eine Woche vor dem Lockdown vom Montag, 16. März, sprunghaft und nachhaltig angestiegen ist. «Damals hat ein grosser Streaming-Anbieter einen Teil seines Verkehrs über unsere Infrastruktur umgeleitet», erklärt Christian Wittenhorst, Swiss-IX-Chef. 
 
 Der tägliche Spitzen-Verkehr am Abend sei deshalb zwischenzeitlich wegen Videostreaming und Gaming merklich erhöht gewesen, habe sich inzwischen aber wieder bei den Vor-Corona-Werten eingependelt. Dies dürfte die Folge der Reduktion der Streaming-Bandbreiten von Netflix und anderen sein, schätzt der Swiss-IX-Chef. 
-[Weiterführende Informationen] (https://www.tagesanzeiger.ch/was-der-datenverkehr-ueber-unser-verhalten-verraet-436727633329)
+[Weiterführende Informationen](https://www.tagesanzeiger.ch/was-der-datenverkehr-ueber-unser-verhalten-verraet-436727633329)
 
 ## Weitere Informationen
 [Projektseite](https://github.com/statistikZH/covid19monitoring)
