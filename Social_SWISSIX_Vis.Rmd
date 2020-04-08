@@ -16,7 +16,7 @@ library(statR)
 
 ```{r cars}
 
-url_dat <- "https://raw.githubusercontent.com/CGRBZH/covid19_soc_swissix/master/Soziales_SwissIXDailyVolume.csv"
+url_dat <- "https://raw.githubusercontent.com/CGRBZH/covid19_soc_swissix/master/Social_SWISSIX.csv"
 
 data <- read_csv(url(url_dat))
 
@@ -29,14 +29,14 @@ data <- read_csv(url(url_dat))
 ggplot(data, aes(x=date, y=value/8)) + geom_point(color = "#FF6666", alpha = 0.7) +
   geom_path(color = "#FF6666", alpha = 0.7) +
   scale_x_date(date_labels = "%a\n%d. %m", date_breaks = "1 week") +
-  labs(title = "Tägliches Internet-Datenvolumen | 01.01.-04.04.2020",
+  labs(title = "Tägliches Internet-Datenvolumen | 01.01.-05.04.2020",
        caption = "Quelle: SwissIX",
        x = NULL,
-       y = "Gigabyte") +
+       y = "Terabyte") +
   theme_stat() +
   theme(panel.grid.major.x = element_line(linetype = "solid", size = 0.25, color = "grey"))
 
-ggsave("swissix_daily.png", width = 24, height = 8, units = "cm")
+# ggsave("swissix_daily.png", width = 24, height = 8, units = "cm")
 
 ```
 
@@ -56,11 +56,11 @@ ggplot(data_wk, aes(week)) +
   labs(title = "Wöchentliches Internet-Datenvolumen | KW 1- KW 14, 2020",
        caption = "Quelle: SwissIX",
        x = NULL,
-       y = "Gigabyte") +
+       y = "Terabyte") +
   ylim(c(0, 15000)) +
   theme_stat()
 
-ggsave("swissix_weekly.png", width = 28, height = 18, units = "cm")
+# ggsave("swissix_weekly.png", width = 28, height = 18, units = "cm")
 
 ```
 

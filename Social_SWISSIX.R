@@ -28,7 +28,7 @@ getData <- function(url_dat)
       'value' := .data$V2,
       'topic' := "Soziales",
       'variable_short' := "internet_datenvolumen",
-      'variable_long' := "Internet-Datenvolumen", #summe? 
+      'variable_long' := "Internet-Datenvolumen", 
       'location' := "CH",
       'unit' := "Terabit pro Tag",
       'source' := "SwissIX Swiss Internet Exchange",
