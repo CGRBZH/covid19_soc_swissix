@@ -27,9 +27,9 @@ getData <- function(url_dat)
       'date' := as.POSIXct(paste(.data$V1, "%Y-%m-%d"), format="%Y-%m-%d"),
       'value' := .data$V2,
       'topic' := "Soziales",
-      'variable_short' := "daily_volume",
-      'variable_long' := "Tägliches Internet-Verkehrsvolumen",
-      'location' := "Schweiz",
+      'variable_short' := "internet_datenvolumen",
+      'variable_long' := "Internet-Datenvolumen", 
+      'location' := "CH",
       'unit' := "Terabit pro Tag",
       'source' := "SwissIX Swiss Internet Exchange",
       'update' := "t\u00e4glich",
@@ -58,4 +58,4 @@ testTable <- function(df)
 url_dat <- "https://ixpmanager.swissix.ch/swissix_daily_volume.txt"
 dat_prep <- getData(url_dat)
 test <- testTable(dat_prep)
-write.table(dat_prep, "./Soziales_SwissIXDailyVolume.csv", sep=",", fileEncoding="UTF-8", row.names = F)
+write.table(dat_prep, "./Social_SWISSIX.csv", sep=",", fileEncoding="UTF-8", row.names = F)
